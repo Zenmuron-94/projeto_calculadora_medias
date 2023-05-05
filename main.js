@@ -51,7 +51,7 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById("mrv").innerHTML = mediaFinal;
+    document.getElementById("mrv").innerHTML = mediaFinal.toFixed(2);
     document.getElementById("mrf").innerHTML = mediaFinal >= notaMinima ? aprv : rprv ;
 
 }
